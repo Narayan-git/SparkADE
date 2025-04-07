@@ -1,0 +1,27 @@
+
+User : u10@cloudlabs-att.online
+Password : Azure@123456
+
+create cluster based on availabe quota
+
+https://github.com/atingupta2005/Apache-Spark-Programming-with-Databricks-Jan-25
+
+After creating storage account open bash in storage account
+-> use below command to give authentication and get the authenticator details
+	Command : az ad sp create-for-rbac --skip-assignment
+
+Result : 
+Option '--skip-assignment' has been deprecated and will be removed in a future release.
+The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
+{
+  "appId": "a80f55b8-3c82-4a84-9e68-b98b34bf3927",
+  "displayName": "azure-cli-2025-04-07-11-19-05",
+  "password": "jTj8Q~T.1ic1_eBJV~ia-rgVbrHikXfZngb66a0c",
+  "tenant": "6bb2f9af-a0af-4c32-a5ec-5f7011d37551"
+}	
+	
+	Authentication given :
+	
+Then authorisation required, for this we have to do setup
+	IN Access Control (IAM) add a role for the above display name as a member with 
+	storage blob data contributor role
