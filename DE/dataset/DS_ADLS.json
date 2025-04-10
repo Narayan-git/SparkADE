@@ -23,7 +23,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "u10nsahu/SelfPractice/@{dataset().FolderName}",
+					"value": "u10nsahu/SelfPractice/Raw/@{dataset().FolderName}",
 					"type": "Expression"
 				},
 				"fileSystem": "inputdata"
