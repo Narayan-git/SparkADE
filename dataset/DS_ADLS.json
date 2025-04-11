@@ -2,7 +2,7 @@
 	"name": "DS_ADLS",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_DataLake",
+			"referenceName": "LS_nsahu_datalake",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -23,10 +23,10 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "u10nsahu/SelfPractice/bronze/@{dataset().FolderName}",
+					"value": "bronze/@{dataset().FolderName}",
 					"type": "Expression"
 				},
-				"fileSystem": "inputdata"
+				"fileSystem": "practicede"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
