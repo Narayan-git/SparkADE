@@ -1,0 +1,9 @@
+{
+	"name": "adf-nsahu-u10",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9e5dc16f-fcfd-42bc-a509-57b2c2083e5f",
+		"tenantId": "6bb2f9af-a0af-4c32-a5ec-5f7011d37551"
+	}
+}
