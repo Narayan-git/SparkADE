@@ -2,7 +2,7 @@
 	"name": "DS_csvValidation",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_DataLake",
+			"referenceName": "LS_nsahu_datalake",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "u10nsahu/SelfPractice/Raw",
-				"fileSystem": "inputdata"
+				"folderPath": "Raw",
+				"fileSystem": "practicede"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
