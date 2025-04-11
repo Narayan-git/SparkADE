@@ -5,14 +5,29 @@
 		"factoryName": {
 			"value": "adf-nsahu-u10"
 		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricksDeltaLake1_accessToken": {
+			"value": ""
+		},
 		"LS_DataLake_accountKey": {
 			"value": ""
+		},
+		"LS_nsahu_datalake_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0408-054935-r3dujvn1"
+		},
+		"LS_DataLake_properties_typeProperties_url": {
+			"value": "https://adlsankitu04apr25.dfs.core.windows.net/"
 		},
 		"LS_Github_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/"
 		},
-		"LS_DataLake_properties_typeProperties_url": {
-			"value": "https://adlsankitu04apr25.dfs.core.windows.net/"
+		"LS_nsahu_datalake_properties_typeProperties_url": {
+			"value": "https://stgnsahu10.dfs.core.windows.net/"
 		}
 	}
 }

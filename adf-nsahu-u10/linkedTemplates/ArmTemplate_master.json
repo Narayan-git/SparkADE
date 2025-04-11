@@ -7,17 +7,37 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-nsahu-u10"
 		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+		},
+		"AzureDatabricksDeltaLake1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricksDeltaLake1'"
+		},
 		"LS_DataLake_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_DataLake'"
+		},
+		"LS_nsahu_datalake_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_nsahu_datalake'"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0408-054935-r3dujvn1"
+		},
+		"LS_DataLake_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsankitu04apr25.dfs.core.windows.net/"
 		},
 		"LS_Github_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com/"
 		},
-		"LS_DataLake_properties_typeProperties_url": {
+		"LS_nsahu_datalake_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://adlsankitu04apr25.dfs.core.windows.net/"
+			"defaultValue": "https://stgnsahu10.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -46,14 +66,29 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					},
+					"AzureDatabricksDeltaLake1_accessToken": {
+						"value": "[parameters('AzureDatabricksDeltaLake1_accessToken')]"
+					},
 					"LS_DataLake_accountKey": {
 						"value": "[parameters('LS_DataLake_accountKey')]"
+					},
+					"LS_nsahu_datalake_accountKey": {
+						"value": "[parameters('LS_nsahu_datalake_accountKey')]"
+					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					},
+					"LS_DataLake_properties_typeProperties_url": {
+						"value": "[parameters('LS_DataLake_properties_typeProperties_url')]"
 					},
 					"LS_Github_properties_typeProperties_url": {
 						"value": "[parameters('LS_Github_properties_typeProperties_url')]"
 					},
-					"LS_DataLake_properties_typeProperties_url": {
-						"value": "[parameters('LS_DataLake_properties_typeProperties_url')]"
+					"LS_nsahu_datalake_properties_typeProperties_url": {
+						"value": "[parameters('LS_nsahu_datalake_properties_typeProperties_url')]"
 					}
 				}
 			},
