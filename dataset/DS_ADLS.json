@@ -23,10 +23,10 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "bronze/@{dataset().FolderName}",
+					"value": "@{dataset().FolderName}",
 					"type": "Expression"
 				},
-				"fileSystem": "practicede"
+				"fileSystem": "bronze"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
